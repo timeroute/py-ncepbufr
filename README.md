@@ -16,7 +16,7 @@ sudo apt install meson gfortran
 ```
 
 ```bash
-pip install numpy setuptools
+pip install numpy
 ```
 
 编译
@@ -24,6 +24,10 @@ pip install numpy setuptools
 ```bash
 sh ./build.sh
 ```
+
+编译后将 ncepbufr 目录和 read_diag 以及 3 个 so 文件拷贝到项目下
+
+---
 
 python interface to NCEP [BUFR](https://en.wikipedia.org/wiki/BUFR) library
 ([BUFRLIB](http://www.nco.ncep.noaa.gov/sib/decoders/BUFRLIB/toc/)).
