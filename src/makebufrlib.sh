@@ -156,8 +156,9 @@ EOF
 cpp $CPPFLAGS -DBUILD=SUPERSIZE bufrlib.PRM.orig bufrlib.prm
 
 export LIB="libbufr.a"
-export FFLAGS=" -O2 -fPIC"
-export CFLAGS=" -O2 -fPIC -DUNDERSCORE"
+# export FFLAGS=" -O2 -fPIC"
+export FFLAGS=" -O2 -fPIC -fallow-argument-mismatch -std=legacy"
+export CFLAGS=" -O2 -fPIC -DUNDERSCORE -std=gnu89"
 export AFLAGS=" "
 make -f make.libbufr
 err_make=$?
