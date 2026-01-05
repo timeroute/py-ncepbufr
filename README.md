@@ -1,4 +1,30 @@
 # py-ncepbufr
+
+## changelog
+
+### 20260105
+
+支持最新版本的 python 以及 numpy 等，更新编译方式
+- 新增 build.sh 编译脚本
+
+## 安装方式
+
+安装编译环境
+
+```bash
+sudo apt install meson gfortran
+```
+
+```bash
+pip install numpy setuptools
+```
+
+编译
+
+```bash
+sh ./build.sh
+```
+
 python interface to NCEP [BUFR](https://en.wikipedia.org/wiki/BUFR) library
 ([BUFRLIB](http://www.nco.ncep.noaa.gov/sib/decoders/BUFRLIB/toc/)).
 
